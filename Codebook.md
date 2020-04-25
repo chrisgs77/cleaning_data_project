@@ -39,9 +39,9 @@
 [36] "Time Gravity Accelerometer Magnitude Mean"  
 [37] "Time Gravity Accelerometer Magnitude STD"   
 [38] "Time Body Accelerometer Jerk Magnitude Mean"
-[39] "Time Body Accelerometer Jerk Magnitude STD" 
-[40] "Time Body Gyroscope Magnitude Mean"         
-[41] "Time Body Gyroscope Magnitude STD"          
+[39] "Time Body Accelerometer Jerk Magnitude STD"
+[40] "Time Body Gyroscope Magnitude Mean" 
+[41] "Time Body Gyroscope Magnitude STD"         
 [42] "Time Body Gyroscope Jerk Magnitude Mean"    
 [43] "Time Body Gyroscope Jerk Magnitude STD"     
 [44] "FFT Body Accelerometer Mean-X"              
@@ -74,15 +74,15 @@
 ## Activity IDs and labels
   ActivityID       ActivityName
   
-1          1            WALKING
+  1            WALKING
+  
+  2   WALKING_UPSTAIRS
 
-2          2   WALKING_UPSTAIRS
+  3 WALKING_DOWNSTAIRS
 
-3          3 WALKING_DOWNSTAIRS
+  4            SITTING
 
-4          4            SITTING
+  5           STANDING
 
-5          5           STANDING
-
-6          6             LAYING
+  6             LAYING
 
