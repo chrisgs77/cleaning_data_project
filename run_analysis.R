@@ -1,5 +1,6 @@
 # required libraries
 library(dplyr)
+library(data.table)
 
 #assign filename based on data source and then read to local directory
 zipfile<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -55,4 +56,10 @@ test<-cbind(test_sub,test_act)
 comb<-rbind(train,test)
 combine_all<-cbind(comb,feat_all)
 
+#create second file of means by activity and subject
+final_data<-data.table(combine_all)
+tidy_means<-aggregate(. ~subjectID+ActivityName,final_data,mean)
+tidy_means<-aggregate(. ~subjectID+ActivityName,final_data,mean)
 
+#write to CSV
+write.csv(tidy_means,"tidy_means.csv",row.names=F)
