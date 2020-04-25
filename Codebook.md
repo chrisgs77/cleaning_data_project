@@ -1,5 +1,13 @@
 # Codebook for project
 
+## The following are the steps:
+* Run analysis.R
+* This program will read in the data from the web and create the final dataset as follows:
+* Pool train and testing data.
+* Extract only mean and STD features.
+* Rename the columns
+* Output a text file of means by subject and activity
+
 ## Columns in final data
  [1] "subjectID"                                  
  [2] "ActivityID"                                 
